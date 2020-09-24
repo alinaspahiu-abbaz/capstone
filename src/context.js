@@ -48,4 +48,13 @@ const RoomContext = React.createContext()
 
 const RoomConsumer = RoomContext.Consumer;
 
+// higher order component
+export function withRoomConsumer(Component){
+    return function ConsumerWrapper(props){
+        return <RoomConsumer >
+                  { value => <Component {...props} contex={value} /> }
+               </RoomConsumer>
+    }
+}
+
 export {RoomProvider, RoomConsumer, RoomContext}
