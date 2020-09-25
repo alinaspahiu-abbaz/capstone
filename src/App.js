@@ -3,6 +3,7 @@ import React from 'react';
 import Home from "./pages/Home"
 import Rooms from "./pages/Rooms"
 import SingleRoom from "./pages/SingleRoom"
+import Spa from "./pages/Spa";
 import Error from "./pages/Error"
 import {Route, Switch} from "react-router-dom"
 
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/rooms" component={Rooms} />
+          <Route exact path="/spa" component={Spa} />
           <Route exact path="/rooms/:slug" component={SingleRoom} />
            {/* path="/rooms/:slug" Route parameter */}
           <Route component={Error} />
