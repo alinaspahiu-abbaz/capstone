@@ -112,7 +112,7 @@ h6 {
   color: var(--primaryColor);
 }
 .nav-links {
-  height: 0;
+  height: 230px;
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
@@ -124,8 +124,9 @@ h6 {
   color: var(--mainBlack);
   transition: var(--mainTransition);
   text-align: center;
-  font-size: 1rem;
+  font-size: 30px;
   font-weight: 600;
+  font-family: 'Yellowtail', cursive;
   letter-spacing: var(--mainSpacing);
 }
 .nav-links a:hover {
@@ -133,7 +134,7 @@ h6 {
 }
 
 .show-nav {
-  height: 100px;
+  height: 0px;
 }
 
 .logo{
@@ -164,7 +165,7 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
+  background: url("./images/4.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,6 +175,90 @@ h6 {
   min-height: 60vh;
 }
 /* End of Hero */
+/* spa */
+.spa-banner{
+  height: 450px;
+  background: url("./images/spa.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spa-room {
+  position: relative;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.holder{
+  width: 100%;
+  display: flex;  
+  padding: 50px;
+  box-sizing:  border-box;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgBx img{
+  flex: 1;
+  padding: 30px;
+  flex-wrap: wrap;
+  max-width: 100%;
+ 
+}
+.imgBx img{
+  width: 700px;
+  height: 400px;
+  flex-basis: 45%;
+}
+
+.content{
+  flex:1;
+  padding-left: 30px;
+  padding-right:30px;
+  align-items: center;
+ 
+  }
+
+.content h3{
+  font-family: 'Tangerine', cursive;
+  color: var(--primaryColor);
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.content p{
+  font-family: 'Poiret One', cursive;
+  font-size: 15px;
+  margin-top: 0;
+
+}
+
+@media screen and (max-width: 760px) {
+   .holder{
+     flex-direction: column;
+   }
+}
+
+@media screen and (max-width: 767px) and ( min-width: 1024) {
+  .imgBx img{
+   width: 500px;
+  }
+}
+
+@media screen and (max-width: 1163px) {
+  .holder{
+    flex-direction: column;
+  }
+
+}
+
+
+
+/* end of spa */
 /* Banner */
 .banner {
   display: inline-block;
