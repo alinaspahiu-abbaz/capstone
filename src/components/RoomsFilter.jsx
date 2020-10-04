@@ -18,7 +18,6 @@ export default function RoomsFilter({rooms}) {
            minPrice, maxPrice, minSize, maxSize, breakfast, pets
         } = context;
 
-    
     let types = getUnique(rooms, 'type');// get unique types: 
     types = ['all', ...types]; // add all
     types = types.map((item, index) =>{ // map to  jsx:
