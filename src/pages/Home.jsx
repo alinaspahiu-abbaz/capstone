@@ -5,7 +5,6 @@ import {Link} from "react-router-dom"
 import Services from "../components/Services"
 import FeaturedRooms from "../components/FeaturedRoom"
 
-
 export default function Home(){
     return(
          <>
